@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300;1,400&family=Shantell+Sans:ital@1&display=swap');
+
+
+
+ body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(./images/7.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Shantell Sans', cursive;
+
+
+} 
+
+h2{
+    text-align: center;
+    color: rgb(6, 12, 109);
+    font-size: 2.3rem;
+}
+
+.login-box{
+    position: relative;
+    height: 450px;
+    width: 400px;
+    border: 2px solid rgba(255, 255, 255,0.3);
+    border-radius: 20px;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.input-box{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid white;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    pointer-events: none;
+    transition: .5s;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 35px 0 5px;
+    color: rgb(255, 255, 255);
+}
+
+.input-box ion-icon{
+    position: absolute;
+    right: 8px;
+    color: white;
+    font-size:1.2rem;
+    top: 20px;
+}
+
+.remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    margin: -15px 0 15px;
+    color: white;
+
+}
+
+.remember-forgot label input{
+    margin-right: 3px;
+}
+
+.remember-forgot label a{
+    color: white;
+    text-decoration: none;
+}
+.remember-forgot a{
+    color: blue;
+    font-size: 1rem;
+}
+
+.remember-forgot label a:hover{
+    text-decoration: underline;
+}
+
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background-color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.register{
+    font-size: .9em;
+    color: white;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.register p a:hover{
+    text-decoration: underline;
+}
